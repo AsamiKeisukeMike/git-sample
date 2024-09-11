@@ -1,0 +1,9 @@
+services:
+    python3:
+        build: .
+        container_name: 'python'
+        tty: true
+        volumes:
+         - "/mnt/c/Users/arkeh/Documents/git/git-sample:/app:rw"
+        ports:
+         - '8888:8888'
